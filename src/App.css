@@ -1,0 +1,70 @@
+.center-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+
+  .center-container-row {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+  }
+
+.inputBox {
+    width: 300;
+    margin: 5px;
+}
+
+.btnc {
+  width: 100px;
+  margin-top: 20px;
+  padding: 15px;
+  background: 'white';
+  border-radius: 20px;
+  font-weight: 'bold'; 
+  color: #053E5F;
+}
+
+.btncb {
+  width: 100px;
+  padding: 15px;
+  background: 'white';
+  border-radius: 20px;
+  font-weight: 'bold'; 
+  color: 'black';
+}
+
+.btnc:hover {
+  background: #053E5F;
+  color: white;
+}
+
+.btncb:hover {
+  background: #0000;
+  color: white;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+}
+
+@media (min-width: 500px) {
+  .image {
+    width: 400px;
+    height: 400px;
+  }
+}
+
