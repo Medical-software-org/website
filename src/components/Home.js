@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import ContentBox from './contentBox';
 import BoxesContentBox from './boxesContentBox';
 import { whoAreWeP1, whoAreWeP2, goalP1, goalP2 } from './text';
-import placeholderImage from '../images/blackImage.jpg';
 import serversImage from '../images/servers.jpg';
 import papersImage from '../images/papers.jpg';
 import FormComponent from './formComponent';
@@ -13,7 +12,7 @@ import firebase from "firebase/app";
 import 'firebase/firestore';
 import 'firebase/database';
 
-// TODO: termsOfUse, possible background image on sign up, possible cauresel
+// TODO: frequently asked, termsOfUse, possible background image on sign up, possible cauresel
 
 
 function Home() {
