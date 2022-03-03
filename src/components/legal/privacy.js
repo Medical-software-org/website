@@ -3,7 +3,7 @@ import {globalColors} from '../colors';
 
 function privacy() {
   return (
-    <div className='center-container' style={{color: globalColors.blue}} >
+    <div className='center-container' style={{color: globalColors.blue, padding: 10}} >
         <h1>Privacy Policy</h1>
         <h4>About this Policy</h4>
         <p>

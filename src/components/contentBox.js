@@ -9,7 +9,7 @@ function contentBox({color, header, text1, text2, image, reverse}) {
                     <img
                         src={image}
                         className="image shadow"
-                        alt="image"
+                        alt=""
                     />
                 </div>
                 <div className="flex-item-right"  >
@@ -31,7 +31,7 @@ function contentBox({color, header, text1, text2, image, reverse}) {
                 <img
                     src={image}
                     className="image shadow"
-                    alt="image"
+                    alt=""
                 />
             </div>
             <div className="flex-item-right" >

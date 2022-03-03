@@ -3,16 +3,16 @@ import {global} from './globalStyles';
 import { Formik } from 'formik';
 import { msgSchema } from './validation';
 
-function Footer() {
+function Footer({reference}) {
 
   const sendMessage = async (values) => {
 
     const data = {
       name: values.name,
-      message: values.msg + "\n" + "\n" + "email: " + values.email 
+      message: values.msg + "\n\nemail: " + values.email 
     };
 
-    fetch("https://formsubmit.co/ajax/hlumi68@gmail.com", {
+    fetch("https://formsubmit.co/ajax/contact@archivesoftware.co.za", {
       method: "POST",
       headers: { 
           'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ function Footer() {
 
   return (
     <div style={styles.container} >
-      <h1>Send us a message</h1>
+      <h1 ref={reference} id='mes' >Send us a message</h1>
       <div style={{marginTop: 20, marginBottom: 20}} >
       <Formik
         initialValues={{email: '', name: '', msg: ''}}
@@ -64,7 +64,7 @@ function Footer() {
       </div>
       <div style={styles.rowContainer} >
           <h5 style={{display: "inline-block", color: "white"}} >copyright 2022</h5>
-          <i class="fa fa-copyright" style={{color: "white", marginLeft: 8}} ></i>
+          <i className="fa fa-copyright" style={{color: "white", marginLeft: 8}} ></i>
       </div>
     </div>
   );

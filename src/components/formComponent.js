@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik } from 'formik';
 import { preRegisterSchema } from './validation';
 
-function formComponent({heading, subHeading, color, buttonText, db }) {
+function formComponent({color, db, signUpRef}) {
 
     const preRegister = async (values) => {
         db.ref('email-list')
@@ -26,9 +26,9 @@ function formComponent({heading, subHeading, color, buttonText, db }) {
         >
             {
                 props => (
-                    <div className='center-container' style={{background: color}} >
-                        <h1 style={styles.text2} >{heading}</h1>
-                        <h2 style={styles.text} >{subHeading}</h2>
+                    <div ref={signUpRef} className='center-container' style={{background: color}} >
+                        <h1 style={styles.text2} >Sign Up!</h1>
+                        <h2 style={styles.text} >Sign up to get updates and notifications of release and testing dates.</h2>
                         <div style={{marignTop: 30}} >
                             <input onChange={props.handleChange('name')} value={props.values.name} style={styles.input} placeholder='Institution Name...' className='inputBox' />
                             <p 
@@ -40,7 +40,7 @@ function formComponent({heading, subHeading, color, buttonText, db }) {
                                 style={{color: 'red'}}>
                                 {props.touched.email && props.errors.email}
                             </p>
-                            <button onClick={props.handleSubmit} className='btnc' >{buttonText}</button>
+                            <button onClick={props.handleSubmit} className='btnc' >sign up</button>
                         </div>
                     </div>
                 )

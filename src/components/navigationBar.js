@@ -1,6 +1,6 @@
 import React from 'react';
 import './navigationBar.css';
-import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../images/logo.svg';
 import { NavLink } from "react-router-dom";
 
@@ -21,6 +21,7 @@ function navigationBar() {
           <Nav className="ms-auto" >
             <NavLink className={(navData) => navData.isActive ? "nav-link active" : "nav-link"} to="/">Home</NavLink>
             <NavLink className={(navData) => navData.isActive ? "nav-link active" : "nav-link"} to="/privacy">Privacy Policy</NavLink>
+            <NavLink className={(navData) => navData.isActive ? "nav-link active" : "nav-link"} to="/FAQ">FAQ</NavLink>
             {/* <NavLink className={(navData) => navData.isActive ? "nav-link active" : "nav-link"} to="/terms-of-use">Terms Of Use</NavLink> */}
           </Nav>
         </Navbar.Collapse>
