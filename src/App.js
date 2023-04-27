@@ -16,7 +16,7 @@ import "firebase/database";
 
 // TODO: re-design send us message and sign up, modal for success, firebase rules fix (chatGPT),
 // fix github deploy issue, rewrite text for 'Our goal' section.
-// modal (reomove overflow associated, modal open on success), loading animation
+// modal (reomove overflow associated)
 
 function App() {
   const routePath = useLocation();

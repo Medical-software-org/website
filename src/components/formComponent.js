@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { Formik } from "formik";
 import { preRegisterSchema } from "./validation";
 import { MessageModal } from "./modal/modal";
+import { Spinner } from "react-bootstrap";
 
 export function FormComponent({ color, db, signUpRef }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -18,6 +20,7 @@ export function FormComponent({ color, db, signUpRef }) {
       })
       .then(() => {
         setIsOpen(true);
+        setIsLoading(false);
       });
   };
 
@@ -33,6 +36,7 @@ export function FormComponent({ color, db, signUpRef }) {
         initialValues={{ name: "", email: "" }}
         validationSchema={preRegisterSchema}
         onSubmit={(values, actions) => {
+          setIsLoading(true);
           preRegister(values);
           actions.resetForm();
         }}
@@ -69,8 +73,13 @@ export function FormComponent({ color, db, signUpRef }) {
               <p style={{ color: "red" }}>
                 {props.touched.email && props.errors.email}
               </p>
-              <button onClick={props.handleSubmit} className="btn btn-primary">
-                sign up
+              <button
+                onClick={props.handleSubmit}
+                className="btn btn-primary"
+                disabled={isLoading}
+              >
+                {!isLoading && "sign up"}
+                {isLoading && <Spinner animation="grow" variant="primary" />}
               </button>
             </div>
           </div>

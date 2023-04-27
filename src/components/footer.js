@@ -3,9 +3,11 @@ import { global } from "./globalStyles";
 import { Formik } from "formik";
 import { msgSchema } from "./validation";
 import { MessageModal } from "./modal/modal";
+import { Spinner } from "react-bootstrap";
 
 function Footer({ reference }) {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -26,7 +28,10 @@ function Footer({ reference }) {
       body: JSON.stringify(data),
     })
       .then((response) => response.json())
-      .then(() => setIsOpen(true))
+      .then(() => {
+        setIsOpen(true);
+        setIsLoading(false);
+      })
       .catch((error) => console.log(error));
   };
 
@@ -47,6 +52,7 @@ function Footer({ reference }) {
             initialValues={{ email: "", name: "", msg: "" }}
             validationSchema={msgSchema}
             onSubmit={(values, actions) => {
+              setIsLoading(true);
               sendMessage(values);
               actions.resetForm();
             }}
@@ -90,7 +96,8 @@ function Footer({ reference }) {
                   onClick={props.handleSubmit}
                   className="btn btn-primary"
                 >
-                  send
+                  {!isLoading && "send"}
+                  {isLoading && <Spinner animation="grow" variant="primary" />}
                 </button>
               </React.Fragment>
             )}
