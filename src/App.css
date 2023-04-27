@@ -1,60 +1,75 @@
 .center-container {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%;
-    flex-direction: column;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    align-items: center;
-  }
-
-  .center-container-row {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-direction: column;
-  }
-
-.inputBox {
-    width: 300;
-    margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
 }
 
-.btnc {
-  width: 100px;
+.center-container-row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-direction: column;
+}
+
+.inputBox {
+  width: 300;
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: white !important;
+  color: #053e5f !important;
+  border-color: #053e5f !important;
+}
+
+/* .btnc {
   margin-top: 20px;
-  padding: 15px;
-  background: 'white';
+  padding: 10px;
+  background: "white";
   border-radius: 20px;
-  font-weight: 'bold'; 
-  color: #053E5F;
+  font-weight: "bold";
+  color: #053e5f;
 }
 
 .btncb {
   width: 100px;
   padding: 15px;
-  background: 'white';
+  background: "white";
   border-radius: 20px;
-  font-weight: 'bold'; 
-  color: 'black';
+  font-weight: "bold";
+  color: "black";
+}
+
+.btn-modal {
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .btnc:hover {
-  background: #053E5F;
+  background: #053e5f;
   color: white;
 }
 
 .btncb:hover {
   background: #0000;
   color: white;
-}
+} */
 
 .image {
   width: 300px;
@@ -74,7 +89,8 @@ table {
   width: 300px;
 }
 
-td, th {
+td,
+th {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
@@ -83,4 +99,3 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-

@@ -1,0 +1,12 @@
+.modal-mine {
+  display: block !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-content-mine {
+  margin: 200px auto;
+  padding: 20px;
+  width: 60% !important;
+  max-width: 300px;
+}
