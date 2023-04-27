@@ -29,7 +29,7 @@ function Home({ db, signUpRef }) {
         heading="We care about your privacy!"
         subHeading="We are dedicated to keeping your data safe and secured, for more information follow the links below."
       />
-      <FormComponent db={db} color={globalColors.blue} signUpRef={signUpRef} />
+      <FormComponent db={db} color="grey" signUpRef={signUpRef} />
     </div>
   );
 }

@@ -48,10 +48,10 @@ export function FormComponent({ color, db, signUpRef }) {
             style={{ background: color }}
           >
             <h1 style={styles.text2}>Sign Up!</h1>
-            <h2 style={styles.text}>
+            <h4 style={styles.text}>
               Sign up to get updates and notifications of release and testing
               dates.
-            </h2>
+            </h4>
             <div style={{ marignTop: 30 }}>
               <input
                 onChange={props.handleChange("name")}
@@ -75,7 +75,7 @@ export function FormComponent({ color, db, signUpRef }) {
               </p>
               <button
                 onClick={props.handleSubmit}
-                className="btn btn-primary"
+                className="btn btn-primary btn-lg"
                 disabled={isLoading}
               >
                 {!isLoading && "sign up"}
@@ -96,7 +96,6 @@ const styles = {
   },
   text2: {
     color: "white",
-    fontSize: 56,
   },
   input: {
     borderRadius: 10,

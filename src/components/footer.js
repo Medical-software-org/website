@@ -94,10 +94,10 @@ function Footer({ reference }) {
                 </p>
                 <button
                   onClick={props.handleSubmit}
-                  className="btn btn-primary"
+                  className="btn btn-primary btn-lg"
                 >
                   {!isLoading && "send"}
-                  {isLoading && <Spinner animation="grow" variant="primary" />}
+                  {isLoading && <Spinner animation="grow" variant="light" />}
                 </button>
               </React.Fragment>
             )}
