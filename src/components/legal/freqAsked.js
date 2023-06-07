@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { globalColors } from "../colors";
-import { FormComponent } from "../formComponent";
 
-function freqAsked({ scrollToEnd, scrollToSignUp, signUpRef }) {
+function freqAsked({ scrollToSignUp }) {
   return (
     <div style={{ width: "100%" }}>
       <div
@@ -23,15 +22,8 @@ function freqAsked({ scrollToEnd, scrollToSignUp, signUpRef }) {
           >
             sign up
           </a>{" "}
-          to get additional info or{" "}
-          <a
-            href=""
-            style={{ textDecorationLine: "underline", color: "inherit" }}
-            onClick={(e) => scrollToEnd(e)}
-          >
-            send us a message
-          </a>{" "}
-          to ask a question or get a quotation.
+          to get additional info or send us a message at
+          help@archivesoftware.co.za to ask a question or get a quotation.
         </p>
         <h4 style={{ textDecorationLine: "underline", marginTop: 10 }}>
           Q: When is this product officially launching?
@@ -47,7 +39,8 @@ function freqAsked({ scrollToEnd, scrollToSignUp, signUpRef }) {
           </a>{" "}
           to get pre-release dates, discounts and other offers.
         </p>
-        <h4 style={{ textDecorationLine: "underline", marginTop: 10 }}>
+
+        {/* <h4 style={{ textDecorationLine: "underline", marginTop: 10 }}>
           Q: How much will using Archive cost me?
         </h4>
         <p>
@@ -69,7 +62,8 @@ function freqAsked({ scrollToEnd, scrollToSignUp, signUpRef }) {
             sign up
           </a>{" "}
           to recieve updates as they happen.
-        </p>
+        </p> */}
+
         <h4 style={{ textDecorationLine: "underline", marginTop: 10 }}>
           Q: Is electronic record keeping safe?
         </h4>
@@ -98,7 +92,6 @@ function freqAsked({ scrollToEnd, scrollToSignUp, signUpRef }) {
           to find out how we protect and use your data.
         </p>
       </div>
-      <FormComponent color={globalColors.blue} signUpRef={signUpRef} />
     </div>
   );
 }

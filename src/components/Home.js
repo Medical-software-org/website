@@ -5,9 +5,8 @@ import { whoAreWeP1, whoAreWeP2, goalP1, goalP2 } from "./text";
 import serversImage from "../images/servers.jpg";
 import papersImage from "../images/papers.jpg";
 import { globalColors } from "./colors";
-import { FormComponent } from "./formComponent";
 
-function Home({ signUpRef }) {
+function Home() {
   return (
     <div style={{ width: "100%" }}>
       <ContentBox
@@ -29,7 +28,6 @@ function Home({ signUpRef }) {
         heading="We care about your privacy!"
         subHeading="We are dedicated to keeping your data safe and secured, for more information follow the links below."
       />
-      <FormComponent color="grey" signUpRef={signUpRef} />
     </div>
   );
 }
