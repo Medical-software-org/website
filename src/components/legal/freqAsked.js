@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { globalColors } from "../colors";
 import { FormComponent } from "../formComponent";
 
-function freqAsked({ scrollToEnd, scrollToSignUp, signUpRef, db }) {
+function freqAsked({ scrollToEnd, scrollToSignUp, signUpRef }) {
   return (
     <div style={{ width: "100%" }}>
       <div
@@ -98,7 +98,7 @@ function freqAsked({ scrollToEnd, scrollToSignUp, signUpRef, db }) {
           to find out how we protect and use your data.
         </p>
       </div>
-      <FormComponent db={db} color={globalColors.blue} signUpRef={signUpRef} />
+      <FormComponent color={globalColors.blue} signUpRef={signUpRef} />
     </div>
   );
 }

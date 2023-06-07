@@ -7,7 +7,7 @@ import papersImage from "../images/papers.jpg";
 import { globalColors } from "./colors";
 import { FormComponent } from "./formComponent";
 
-function Home({ db, signUpRef }) {
+function Home({ signUpRef }) {
   return (
     <div style={{ width: "100%" }}>
       <ContentBox
@@ -29,7 +29,7 @@ function Home({ db, signUpRef }) {
         heading="We care about your privacy!"
         subHeading="We are dedicated to keeping your data safe and secured, for more information follow the links below."
       />
-      <FormComponent db={db} color="grey" signUpRef={signUpRef} />
+      <FormComponent color="grey" signUpRef={signUpRef} />
     </div>
   );
 }

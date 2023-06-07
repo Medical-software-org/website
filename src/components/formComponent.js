@@ -4,7 +4,7 @@ import { preRegisterSchema } from "./validation";
 import { MessageModal } from "./modal/modal";
 import { Spinner } from "react-bootstrap";
 
-export function FormComponent({ color, db, signUpRef }) {
+export function FormComponent({ color, signUpRef }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
