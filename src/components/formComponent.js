@@ -12,16 +12,31 @@ export function FormComponent({ color, db, signUpRef }) {
     setIsOpen(false);
   };
 
-  const preRegister = async (values) => {
-    db.ref("email-list")
-      .push({
-        institution: values.name,
-        email: values.email,
-      })
-      .then(() => {
-        setIsOpen(true);
-        setIsLoading(false);
+  const preRegister = async ({ name, email }) => {
+    try {
+      const { REACT_APP_databaseURL } = process.env;
+      const data = {
+        institution: name,
+        email,
+      };
+
+      const response = await fetch(REACT_APP_databaseURL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       });
+
+      if (response.ok) {
+        setIsLoading(false);
+        setIsOpen(true);
+      } else {
+        alert("Something went wrong, please try again later.");
+      }
+    } catch (error) {
+      alert("Something went wrong, please try again.");
+    }
   };
 
   return (
