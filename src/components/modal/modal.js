@@ -11,7 +11,7 @@ export function MessageModal({ isOpen, handleClose, title, message }) {
       <Modal.Body>{message}</Modal.Body>
       <Modal.Footer>
         <Button variant="primary" onClick={handleClose}>
-          OK
+          Close
         </Button>
       </Modal.Footer>
     </Modal>

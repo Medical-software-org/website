@@ -44,7 +44,7 @@ export function FormComponent({ color, signUpRef }) {
     <>
       <MessageModal
         title="Success!"
-        message="You have been signed up successfully."
+        message="Thank you for signing up! Get ready to revolutionize the way you manage patient medical records."
         isOpen={isOpen}
         handleClose={handleClose}
       />
@@ -88,10 +88,10 @@ export function FormComponent({ color, signUpRef }) {
               </p>
               <button
                 onClick={props.handleSubmit}
-                className="btn btn-primary btn-lg"
+                className="btn btn-primary btn-md"
                 disabled={isLoading}
               >
-                {!isLoading && "sign up"}
+                {!isLoading && "Sign Up"}
                 {isLoading && <Spinner animation="grow" variant="primary" />}
               </button>
             </div>
