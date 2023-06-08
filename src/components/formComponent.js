@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import { preRegisterSchema } from "./validation";
 import { MessageModal } from "./modal/modal";
 import { Spinner } from "react-bootstrap";
-import { signUpParagraph } from "../common/words";
+import { SignUpParagraph } from "../common/words";
 
 export function FormComponent({ color, signUpRef }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,7 +64,7 @@ export function FormComponent({ color, signUpRef }) {
             style={{ background: color }}
           >
             <h1 style={styles.text2}>Sign Up Today!</h1>
-            <p style={styles.text}>{signUpParagraph}</p>
+            <p style={styles.text}>{SignUpParagraph}</p>
             <div style={{ marignTop: 30 }}>
               <input
                 onChange={props.handleChange("name")}

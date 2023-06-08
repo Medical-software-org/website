@@ -1,10 +1,11 @@
 import React from "react";
 import ContentBox from "./contentBox";
 import BoxesContentBox from "./boxesContentBox";
-import { whoAreWeP1, whoAreWeP2, goalP1, goalP2 } from "./text";
+import { goalP1, goalP2 } from "./text";
 import serversImage from "../images/servers.jpg";
 import papersImage from "../images/papers.jpg";
 import { globalColors } from "./colors";
+import { WhoAreWeParagraph1, WhoAreWeParagraph2 } from "../common/words";
 
 function Home() {
   return (
@@ -12,8 +13,8 @@ function Home() {
       <ContentBox
         header="Who are we?"
         color="white"
-        text1={whoAreWeP1}
-        text2={whoAreWeP2}
+        text1={WhoAreWeParagraph1}
+        text2={WhoAreWeParagraph2}
         image={serversImage}
       />
       <ContentBox
