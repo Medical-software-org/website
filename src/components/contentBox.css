@@ -1,97 +1,98 @@
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
 
-  .flex-container-reverse {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    width: 100%;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-  }
-  
+.flex-container-reverse {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .flex-item-left {
+  padding: 10px;
+  flex: 50%;
+  align-items: center;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 50%;
+  align-items: center;
+} */
+
+.flex-item-left-border {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item-right-border {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pp {
+  max-width: 800px;
+}
+
+.box {
+  border: 1px solid #053e5f;
+  border-radius: 20px;
+  width: 350px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.box:hover {
+  background: #053e5f;
+  color: white;
+}
+
+#icon {
+  font-size: 80px;
+  margin-top: 20px;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right,
   .flex-item-left {
-    padding: 10px;
-    flex: 50%;
+    flex: 100%;
     align-items: center;
   }
-  
-  .flex-item-right {
-    padding: 10px;
-    flex: 50%;
-    align-items: center;
-  }
-
+  .flex-item-right-border,
   .flex-item-left-border {
-    padding: 10px;
-    display: flex;
+    flex: 100%;
     align-items: center;
-    justify-content: center;
   }
-  
+}
+
+@media (min-width: 800px) {
+  .flex-item-right {
+    padding-top: 10;
+  }
   .flex-item-right-border {
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 10;
   }
+}
 
-  .pp {
-    max-width: 800px;
-  }
-  
+@media (max-width: 400px) {
   .box {
-    border: 1px solid #053E5F;
-    border-radius: 20px;
-    width: 350px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 300px;
   }
-
-  .box:hover {
-    background: #053E5F;
-    color: white;
-  }
-
-  #icon {
-    font-size:80px;
-    margin-top: 20px;
-  }
-
-  
-  /* Responsive layout - makes a one column-layout instead of a two-column layout */
-  @media (max-width: 800px) {
-    .flex-item-right, .flex-item-left {
-      flex: 100%;
-      align-items: center;
-    }
-    .flex-item-right-border, .flex-item-left-border {
-      flex: 100%;
-      align-items: center;
-    }
-  }
-
-  @media (min-width: 800px) {
-    .flex-item-right{
-      padding-top: 10;
-    }
-    .flex-item-right-border{
-      padding-top: 10;
-    }
-  }
-
-  @media (max-width: 400px) {
-    .box{
-      width: 300px;
-    }
-  }
+}

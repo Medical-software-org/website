@@ -1,3 +1,5 @@
+@import "bulma";
+
 .center-container {
   display: flex;
   flex-wrap: wrap;
@@ -33,13 +35,13 @@
   border-color: #053e5f !important;
 }
 
-.image {
+.column-content-size {
   width: 300px;
   height: 300px;
 }
 
-@media (min-width: 500px) {
-  .image {
+@media (min-width: $desktop) {
+  .column-content-size {
     width: 400px;
     height: 400px;
   }
@@ -60,4 +62,8 @@ th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.is-reversed {
+  flex-direction: row-reverse;
 }

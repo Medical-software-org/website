@@ -1,11 +1,14 @@
 import React from "react";
 import { FormComponent } from "./formComponent";
+import { FadeInWrapper } from "./fade-in-wrapper/fade-in-wrapper";
 
 function Footer({ signUpRef }) {
   return (
-    <div style={styles.container}>
-      <FormComponent color="black" signUpRef={signUpRef} />
-    </div>
+    <FadeInWrapper>
+      <div style={styles.container}>
+        <FormComponent color="black" signUpRef={signUpRef} />
+      </div>
+    </FadeInWrapper>
   );
 }
 

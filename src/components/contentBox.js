@@ -1,57 +1,34 @@
 import React from "react";
+import { FadeInWrapper } from "./fade-in-wrapper/fade-in-wrapper";
+import classNames from "classnames";
 
-function contentBox({ color, header, text1, text2, image, reverse }) {
-  if (reverse) {
-    return (
-      <div
-        className="flex-container-reverse"
-        style={{
-          background: color,
-          paddingTop: 50,
-          paddingBottom: 50,
-          paddingLeft: 20,
-          paddingRight: 20,
-        }}
-      >
-        <div className="flex-item-left">
-          <img src={image} className="image shadow" alt="" />
-        </div>
-        <div className="flex-item-right">
-          <div className="pp shadow p-3 mb-5 bg rounded">
-            <p style={{ fontSize: 36, fontWeight: "medium" }}>{header}</p>
-            {text1}
-            <br />
-            <br />
-            {text2}
-          </div>
-        </div>
-      </div>
-    );
-  }
-
+function contentBox({
+  header,
+  text,
+  image,
+  reverse = false,
+  initialVisibility = true,
+}) {
   return (
     <div
-      className="flex-container"
-      style={{
-        background: color,
-        paddingTop: 50,
-        paddingBottom: 50,
-        paddingLeft: 20,
-        paddingRight: 20,
-      }}
+      className={classNames(
+        "columns mb-0-mobile mb-6 is-centered is-vcentered",
+        {
+          "is-reversed": reverse,
+        }
+      )}
     >
-      <div className="flex-item-left">
-        <img src={image} className="image shadow" alt="" />
-      </div>
-      <div className="flex-item-right">
-        <div className="pp shadow p-3 mb-5 bg-white rounded">
-          <p style={{ fontSize: 36, fontWeight: "medium" }}>{header}</p>
-          {text1}
-          <br />
-          <br />
-          {text2}
+      <FadeInWrapper initialVisibility={initialVisibility}>
+        <div>
+          <img src={image} alt="" className="column-content-size" />
         </div>
-      </div>
+      </FadeInWrapper>
+      <FadeInWrapper initialVisibility={initialVisibility}>
+        <div className="column-content p-6">
+          <h1>{header}</h1>
+          <p>{text}</p>
+        </div>
+      </FadeInWrapper>
     </div>
   );
 }

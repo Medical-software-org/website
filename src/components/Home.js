@@ -3,6 +3,7 @@ import ContentBox from "./contentBox";
 import BoxesContentBox from "./boxesContentBox";
 import serversImage from "../images/servers.jpg";
 import papersImage from "../images/papers.jpg";
+import t from "../images/computer-3174729.jpg";
 import { globalColors } from "./colors";
 import {
   OurGoalParagraph1,
@@ -16,17 +17,27 @@ function Home() {
     <div style={{ width: "100%" }}>
       <ContentBox
         header="Who are we?"
-        color="white"
-        text1={WhoAreWeParagraph1}
-        text2={WhoAreWeParagraph2}
+        text={WhoAreWeParagraph1}
         image={serversImage}
       />
       <ContentBox
-        header="Our goal."
-        color={globalColors.grey}
-        text1={OurGoalParagraph1}
-        text2={OurGoalParagraph2}
+        header="Increased efficiency"
+        text={WhoAreWeParagraph2}
         image={papersImage}
+        reverse={true}
+        initialVisibility={false}
+      />
+      <ContentBox
+        header="Our goal"
+        color="white"
+        text={OurGoalParagraph1}
+        image={serversImage}
+      />
+      <ContentBox
+        header="A promise you can count on"
+        color="white"
+        text={OurGoalParagraph2}
+        image={t}
         reverse={true}
       />
       <BoxesContentBox
