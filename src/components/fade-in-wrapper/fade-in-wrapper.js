@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./fade-in-wrapper.scss";
 
-export function FadeInWrapper({ children, initialVisibility }) {
+export function FadeInWrapper({ children, initialVisibility, ...rest }) {
   const [isVisible, setVisible] = useState(initialVisibility);
   const domRef = useRef();
 
@@ -23,10 +23,11 @@ export function FadeInWrapper({ children, initialVisibility }) {
 
   return (
     <div
-      className={`column has-text-centered is-vcentered fade-in-section ${
+      className={`column has-text-centered is-vcentered p-0 fade-in-section ${
         isVisible ? "is-visible" : ""
       }`}
       ref={domRef}
+      {...rest}
     >
       {children}
     </div>

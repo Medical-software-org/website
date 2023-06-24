@@ -11,12 +11,9 @@ function contentBox({
 }) {
   return (
     <div
-      className={classNames(
-        "columns mb-0-mobile mb-6 is-centered is-vcentered",
-        {
-          "is-reversed": reverse,
-        }
-      )}
+      className={classNames("columns mb-6 is-centered is-vcentered", {
+        "is-reversed": reverse,
+      })}
     >
       <FadeInWrapper initialVisibility={initialVisibility}>
         <div>
@@ -24,7 +21,7 @@ function contentBox({
         </div>
       </FadeInWrapper>
       <FadeInWrapper initialVisibility={initialVisibility}>
-        <div className="column-content p-6">
+        <div className="px-6 pt-6">
           <h1>{header}</h1>
           <p>{text}</p>
         </div>

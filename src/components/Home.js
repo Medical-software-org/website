@@ -1,6 +1,6 @@
 import React from "react";
 import ContentBox from "./contentBox";
-import BoxesContentBox from "./boxesContentBox";
+import { BoxesContentBox } from "./boxesContentBox";
 import serversImage from "../images/servers.jpg";
 import papersImage from "../images/papers.jpg";
 import t from "../images/computer-3174729.jpg";
@@ -40,10 +40,7 @@ function Home() {
         image={t}
         reverse={true}
       />
-      <BoxesContentBox
-        heading="We care about your privacy!"
-        subHeading="We are dedicated to keeping your data safe and secured, for more information follow the links below."
-      />
+      <BoxesContentBox />
     </div>
   );
 }
