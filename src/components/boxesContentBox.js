@@ -10,10 +10,7 @@ export function BoxesContentBox() {
       <FadeInWrapper>
         <div className="box clickable p-6" onClick={() => navigate("/privacy")}>
           <h1>Privacy Policy</h1>
-          <p>
-            Click here to read our privacy policy and learn how we protect and
-            use your data.
-          </p>
+          <p>Click here to read our privacy policy.</p>
           <i id="icon" className="fa fa-info-circle"></i>
         </div>
       </FadeInWrapper>

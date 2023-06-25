@@ -21,7 +21,7 @@ function contentBox({
         </div>
       </FadeInWrapper>
       <FadeInWrapper initialVisibility={initialVisibility}>
-        <div className="px-6 pt-6">
+        <div className="px-6 pt-6-mobile">
           <h1>{header}</h1>
           <p>{text}</p>
         </div>
