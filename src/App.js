@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
 import "./components/contentBox.css";
@@ -11,12 +11,6 @@ import { useLocation } from "react-router-dom";
 
 function App() {
   const routePath = useLocation();
-  const signUpRef = useRef(null);
-
-  const scrollToSignUp = (e) => {
-    e.preventDefault();
-    signUpRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
 
   const toTop = () => {
     window.scrollTo(0, 0);
@@ -30,16 +24,11 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home signUpRef={signUpRef} />} />
+        <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<Privacy />} />
-        <Route
-          path="/FAQ"
-          element={
-            <Faq signUpRef={signUpRef} scrollToSignUp={scrollToSignUp} />
-          }
-        />
+        <Route path="/FAQ" element={<Faq />} />
       </Routes>
-      <Footer signUpRef={signUpRef} />
+      <Footer />
     </div>
   );
 }

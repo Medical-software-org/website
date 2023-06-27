@@ -5,7 +5,7 @@ import { MessageModal } from "./modal/modal";
 import { Spinner } from "react-bootstrap";
 import { SignUpParagraph } from "../common/words";
 
-export function FormComponent({ color, signUpRef }) {
+export function FormComponent({ color }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -58,11 +58,7 @@ export function FormComponent({ color, signUpRef }) {
         }}
       >
         {(props) => (
-          <div
-            ref={signUpRef}
-            className="center-container"
-            style={{ background: color }}
-          >
+          <div className="center-container" style={{ background: color }}>
             <h1 style={styles.text2}>Sign Up Today!</h1>
             <p style={styles.text}>{SignUpParagraph}</p>
             <div style={{ marignTop: 30 }}>

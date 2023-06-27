@@ -5,7 +5,6 @@ import serversImage from "../images/servers_high_res.jpg";
 import doctorImage from "../images/doctor_high_res.jpg";
 import handImage from "../images/hand_high_res.jpg";
 import vrImage from "../images/vr_high_res.jpg";
-import { globalColors } from "./colors";
 import {
   OurGoalParagraph1,
   OurGoalParagraph2,
@@ -25,7 +24,7 @@ function Home() {
         header="Increased efficiency"
         text={WhoAreWeParagraph2}
         image={vrImage}
-        reverse={true}
+        reverse
         initialVisibility={false}
       />
       <ContentBox
@@ -39,7 +38,7 @@ function Home() {
         color="white"
         text={OurGoalParagraph2}
         image={serversImage}
-        reverse={true}
+        reverse
       />
       <BoxesContentBox />
     </div>
