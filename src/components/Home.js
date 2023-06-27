@@ -10,7 +10,7 @@ import {
   OurGoalParagraph2,
   WhoAreWeParagraph1,
   WhoAreWeParagraph2,
-} from "../common/words";
+} from "../text/words";
 
 function Home() {
   return (

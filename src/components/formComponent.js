@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import { preRegisterSchema } from "./validation";
 import { MessageModal } from "./modal/modal";
 import { Spinner } from "react-bootstrap";
-import { SignUpParagraph } from "../common/words";
+import { SignUpParagraph } from "../text/words";
 
 export function FormComponent({ color }) {
   const [isOpen, setIsOpen] = useState(false);
