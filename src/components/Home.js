@@ -1,9 +1,10 @@
 import React from "react";
 import ContentBox from "./contentBox";
 import { BoxesContentBox } from "./boxesContentBox";
-import serversImage from "../images/servers.jpg";
-import papersImage from "../images/papers.jpg";
-import t from "../images/computer-3174729.jpg";
+import serversImage from "../images/servers_high_res.jpg";
+import doctorImage from "../images/doctor_high_res.jpg";
+import handImage from "../images/hand_high_res.jpg";
+import vrImage from "../images/vr_high_res.jpg";
 import { globalColors } from "./colors";
 import {
   OurGoalParagraph1,
@@ -18,12 +19,12 @@ function Home() {
       <ContentBox
         header="Who are we?"
         text={WhoAreWeParagraph1}
-        image={serversImage}
+        image={doctorImage}
       />
       <ContentBox
         header="Increased efficiency"
         text={WhoAreWeParagraph2}
-        image={papersImage}
+        image={vrImage}
         reverse={true}
         initialVisibility={false}
       />
@@ -31,13 +32,13 @@ function Home() {
         header="Our goal"
         color="white"
         text={OurGoalParagraph1}
-        image={serversImage}
+        image={handImage}
       />
       <ContentBox
         header="A promise you can count on"
         color="white"
         text={OurGoalParagraph2}
-        image={t}
+        image={serversImage}
         reverse={true}
       />
       <BoxesContentBox />
