@@ -29,15 +29,6 @@ function privacy() {
         we amend this Privacy Notice we will make you aware of this via updates
         posted on our website. <br />
       </p>
-      <h4>Who we are</h4>
-      <p>
-        Archive is a digital medical record storage solution for your clinic,
-        hospital or surgery. <br />
-        If you have any questions regarding this Private Notice or how we
-        process your personal data, please contact us using the details below:
-        <br />
-        contact@archivesoftware.co.za
-      </p>
       <h4>What personal data do we gather about you?</h4>
       <p>
         "Personal data" is any information about an individual from which that
