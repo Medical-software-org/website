@@ -4,6 +4,7 @@ import { preRegisterSchema } from "./validation";
 import { MessageModal } from "./modal/modal";
 import { Spinner } from "react-bootstrap";
 import { SignUpParagraph } from "../text/words";
+import "./form-component.scss";
 
 export function FormComponent({ color }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -91,9 +92,21 @@ export function FormComponent({ color }) {
                 {isLoading && <Spinner animation="grow" variant="primary" />}
               </button>
             </div>
+            <h6 style={{ marginTop: 20, color: "grey" }}>
+              contact us:{" "}
+              <span style={{ color: "#053e5f" }}>
+                contact@archivesoftware.co.za
+              </span>
+            </h6>
           </div>
         )}
       </Formik>
+      <div className="copyright">
+        <p>
+          copyright <i class="fa fa-copyright" style={{ color: "white" }} />{" "}
+          2023
+        </p>
+      </div>
     </>
   );
 }
