@@ -11,37 +11,47 @@ import {
   WhoAreWeParagraph1,
   WhoAreWeParagraph2,
 } from "../text/words";
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   return (
-    <div style={{ width: "100%" }}>
-      <ContentBox
-        header="Who are we?"
-        text={WhoAreWeParagraph1}
-        image={doctorImage}
-      />
-      <ContentBox
-        header="Increased efficiency"
-        text={WhoAreWeParagraph2}
-        image={vrImage}
-        reverse
-        initialVisibility={false}
-      />
-      <ContentBox
-        header="Our goal"
-        color="white"
-        text={OurGoalParagraph1}
-        image={handImage}
-      />
-      <ContentBox
-        header="A promise you can count on"
-        color="white"
-        text={OurGoalParagraph2}
-        image={serversImage}
-        reverse
-      />
-      <BoxesContentBox />
-    </div>
+    <>
+      <Helmet>
+        <title>Home</title>
+        <meta
+          name="description"
+          content="Archive is a digital medical record storage solution for your clinic, hospital or surgery. Browse through our website to find out more!"
+        />
+      </Helmet>
+      <div style={{ width: "100%" }}>
+        <ContentBox
+          header="Who are we?"
+          text={WhoAreWeParagraph1}
+          image={doctorImage}
+        />
+        <ContentBox
+          header="Increased efficiency"
+          text={WhoAreWeParagraph2}
+          image={vrImage}
+          reverse
+          initialVisibility={false}
+        />
+        <ContentBox
+          header="Our goal"
+          color="white"
+          text={OurGoalParagraph1}
+          image={handImage}
+        />
+        <ContentBox
+          header="A promise you can count on"
+          color="white"
+          text={OurGoalParagraph2}
+          image={serversImage}
+          reverse
+        />
+        <BoxesContentBox />
+      </div>
+    </>
   );
 }
 
