@@ -12,7 +12,7 @@ function navigationBar() {
       expand="lg"
       className="shadow p-3 mb-5 bg-white rounded"
     >
-      <NavLink className="navbar-brand" to="/">
+      <NavLink className="navbar-brand" to="/" rel="canonical" href="/">
         <img
           src={logo}
           width="55"
@@ -29,6 +29,8 @@ function navigationBar() {
               navData.isActive ? "nav-link active" : "nav-link"
             }
             to="/privacy"
+            rel="canonical"
+            href="/privacy"
           >
             Privacy Policy
           </NavLink>
@@ -37,6 +39,8 @@ function navigationBar() {
               navData.isActive ? "nav-link active" : "nav-link"
             }
             to="/FAQ"
+            rel="canonical"
+            href="/FAQ"
           >
             FAQ
           </NavLink>
