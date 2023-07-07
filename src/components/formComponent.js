@@ -94,7 +94,7 @@ export function FormComponent({ color }) {
             </div>
             <h5
               style={{
-                marginTop: 50,
+                marginTop: 10,
                 color: "grey",
                 padding: 30,
                 paddingBottom: 5,
