@@ -43,7 +43,7 @@ function Home() {
           image={handImage}
         />
         <ContentBox
-          header="A promise you can count on"
+          header="A sure promise"
           color="white"
           text={OurGoalParagraph2}
           image={serversImage}

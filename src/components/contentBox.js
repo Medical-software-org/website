@@ -22,7 +22,7 @@ function contentBox({
       </FadeInWrapper>
       <FadeInWrapper initialVisibility={initialVisibility}>
         <div className="px-6 pt-6-mobile">
-          <h1>{header}</h1>
+          <h1 className="is-size-2 has-text-weight-semibold">{header}</h1>
           <p>{text}</p>
         </div>
       </FadeInWrapper>

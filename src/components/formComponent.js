@@ -60,7 +60,12 @@ export function FormComponent({ color }) {
       >
         {(props) => (
           <div className="center-container" style={{ background: color }}>
-            <h1 style={styles.text2}>Sign Up Today!</h1>
+            <h1
+              className="is-size-2 has-text-weight-semibold"
+              style={styles.text2}
+            >
+              Sign Up Today!
+            </h1>
             <p style={styles.text}>{SignUpParagraph}</p>
             <div style={{ marignTop: 30 }}>
               <input
@@ -92,23 +97,24 @@ export function FormComponent({ color }) {
                 {isLoading && <Spinner animation="grow" variant="primary" />}
               </button>
             </div>
-            <h5
+            <p
               style={{
                 marginTop: 10,
                 color: "grey",
                 padding: 30,
                 paddingBottom: 5,
               }}
+              className="is-size-5 has-text-weight-semibold"
             >
               contact us:{" "}
               <span style={{ color: "#053e5f" }}>
                 contact@archivesoftware.co.za
               </span>
-            </h5>
-            <h6 style={{ color: "white" }}>
+            </p>
+            <p className="is-size-6" style={{ color: "white" }}>
               copyright <i class="fa fa-copyright" style={{ color: "white" }} />{" "}
               2023
-            </h6>
+            </p>
           </div>
         )}
       </Formik>

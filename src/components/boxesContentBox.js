@@ -9,7 +9,7 @@ export function BoxesContentBox() {
     <div className="columns mb-6 is-centered is-vcentered">
       <FadeInWrapper>
         <div className="box clickable p-6" onClick={() => navigate("/privacy")}>
-          <h1>Privacy Policy</h1>
+          <h1 className="is-size-2 has-text-weight-semibold">Privacy Policy</h1>
           <p>Click here to read our privacy policy.</p>
           <i id="icon" className="fa fa-info-circle"></i>
         </div>
@@ -19,7 +19,7 @@ export function BoxesContentBox() {
           className="box clickable p-6 mt-mobile-only"
           onClick={() => navigate("/FAQ")}
         >
-          <h1>FAQ</h1>
+          <h1 className="is-size-2 has-text-weight-semibold">FAQ</h1>
           <p>
             Visit our FAQ section to find answers to frequently asked questions.
           </p>
