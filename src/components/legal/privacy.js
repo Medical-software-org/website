@@ -16,8 +16,10 @@ function privacy() {
         className="center-container"
         style={{ color: globalColors.blue, padding: 10 }}
       >
-        <h1>Privacy Policy</h1>
-        <h4>About this Policy</h4>
+        <h1 className="is-size-2 has-text-weight-semibold">Privacy Policy</h1>
+        <h4 className="is-size-4 has-text-weight-semibold">
+          About this Policy
+        </h4>
         <p>
           This Privacy Notice explains what happens with any personal data we
           gather from you in relation to:
@@ -38,7 +40,9 @@ function privacy() {
           If we amend this Privacy Notice we will make you aware of this via
           updates posted on our website. <br />
         </p>
-        <h4>What personal data do we gather about you?</h4>
+        <h4 className="is-size-4 has-text-weight-semibold">
+          What personal data do we gather about you?
+        </h4>
         <p>
           "Personal data" is any information about an individual from which that
           individual can be identified. It does not include data from which an
@@ -75,7 +79,9 @@ function privacy() {
             <td>Name, address, e-mail, telephone number</td>
           </tr>
         </table>
-        <h4>How do we collect your personal data?</h4>
+        <h4 className="is-size-4 has-text-weight-semibold">
+          How do we collect your personal data?
+        </h4>
         <p>
           We may collect personal data about you from the following sources:
         </p>
@@ -90,7 +96,9 @@ function privacy() {
             our software may access and use the software.
           </li>
         </ul>
-        <h4>How do we store your personal data and keep it secure?</h4>
+        <h4 className="is-size-4 has-text-weight-semibold">
+          How do we store your personal data and keep it secure?
+        </h4>
         <p>We use reasonable and up to date security methods to:</p>
         <ul>
           <li>keep your data secure.</li>
@@ -119,7 +127,9 @@ function privacy() {
           own.
           <br />
         </p>
-        <h4>How and why, we will use your personal data?</h4>
+        <h4 className="is-size-4 has-text-weight-semibold">
+          How and why, we will use your personal data?
+        </h4>
         <p>We will usually only process your personal data where:</p>
         <ul>
           <li>
@@ -195,7 +205,9 @@ function privacy() {
           interests" are for any specific processing activity) please contact
           us.
         </p>
-        <h4>How long will we keep your personal data?</h4>
+        <h4 className="is-size-4 has-text-weight-semibold">
+          How long will we keep your personal data?
+        </h4>
         <p>
           We will not keep your personal data for longer than is necessary for
           the purpose(s) for which we process it.
@@ -203,7 +215,9 @@ function privacy() {
           This means that data will be destroyed or erased from our systems when
           it is no longer required.
         </p>
-        <h4>What rights do you have in respect of your personal data?</h4>
+        <h4 className="is-size-4 has-text-weight-semibold">
+          What rights do you have in respect of your personal data?
+        </h4>
         <ul>
           <li>request access to any personal data we hold about you.</li>
           <li>
@@ -237,7 +251,9 @@ function privacy() {
           the request in writing. Please note some of these rights are
           restricted in some circumstances.
         </p>
-        <h4>Who will have access to the data we hold?</h4>
+        <h4 className="is-size-4 has-text-weight-semibold">
+          Who will have access to the data we hold?
+        </h4>
         <p>
           Our personnel who need to access your personal data will view it in
           order that we can provide our services to you.
@@ -283,7 +299,9 @@ function privacy() {
           satisfied that they are legally entitled to access your personal data.
           <br />
         </p>
-        <h4>Right to make a complaint</h4>
+        <h4 className="is-size-4 has-text-weight-semibold">
+          Right to make a complaint
+        </h4>
         <p>
           If you have any issues with our processing of your personal data and
           would like to make a complaint, you may contact us via our email.
