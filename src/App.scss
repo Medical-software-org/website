@@ -112,3 +112,9 @@ tr:nth-child(even) {
     margin-top: 40px;
   }
 }
+
+.sticky-top {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1020 !important;
+}
