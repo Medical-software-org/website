@@ -92,6 +92,7 @@ export function FormComponent({ color }) {
                 onClick={props.handleSubmit}
                 className="btn btn-primary btn-md"
                 disabled={isLoading}
+                style={{ margin: 5 }}
               >
                 {!isLoading && "Sign Up"}
                 {isLoading && <Spinner animation="grow" variant="primary" />}
