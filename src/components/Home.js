@@ -20,7 +20,7 @@ function Home() {
         <title>Home</title>
         <meta
           name="description"
-          content="Archive is a digital medical record storage solution for your clinic, hospital or surgery. Browse through our website to find out more!"
+          content="Archive is a digital medical record storage solution (EHR system) for your clinic, hospital or surgery. Browse through our website to find out more!"
         />
       </Helmet>
       <div style={{ width: "100%", marginTop: 20 }}>
