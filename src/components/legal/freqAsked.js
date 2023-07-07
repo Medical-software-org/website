@@ -13,7 +13,7 @@ function freqAsked() {
           content="Confused? Let us help you by answering our most frequently asked questions."
         />
       </Helmet>
-      <div className="px-6">
+      <div style={{ marginBottom: 20 }} className="px-6">
         <div className="center-container" style={{ color: globalColors.blue }}>
           <h1
             className="is-size-2 has-text-weight-semibold"

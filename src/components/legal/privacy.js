@@ -14,7 +14,7 @@ function privacy() {
       </Helmet>
       <div
         className="center-container"
-        style={{ color: globalColors.blue, padding: 10 }}
+        style={{ color: globalColors.blue, padding: 10, marginBottom: 20 }}
       >
         <h1 className="is-size-2 has-text-weight-semibold">Privacy Policy</h1>
         <h4 className="is-size-4 has-text-weight-semibold">
