@@ -92,21 +92,26 @@ export function FormComponent({ color }) {
                 {isLoading && <Spinner animation="grow" variant="primary" />}
               </button>
             </div>
-            <h6 style={{ marginTop: 20, color: "grey" }}>
+            <h5
+              style={{
+                marginTop: 50,
+                color: "grey",
+                padding: 30,
+                paddingBottom: 5,
+              }}
+            >
               contact us:{" "}
               <span style={{ color: "#053e5f" }}>
                 contact@archivesoftware.co.za
               </span>
+            </h5>
+            <h6 style={{ color: "white" }}>
+              copyright <i class="fa fa-copyright" style={{ color: "white" }} />{" "}
+              2023
             </h6>
           </div>
         )}
       </Formik>
-      <div className="copyright">
-        <p>
-          copyright <i class="fa fa-copyright" style={{ color: "white" }} />{" "}
-          2023
-        </p>
-      </div>
     </>
   );
 }
